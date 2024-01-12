@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#7900ad">
+    <title>DEV-VISION</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="/styleLog.css">
+    </head>
+  <body>
+    <section class="d-flex justify-content-center align-items-center w-100 text-white position-relative">
+      <video autoplay loop id="video_background" preload="auto" volume="0" class="position-absolute" muted>
+          <source src="tinta2.mp4" type="video/mp4">
+      </video>
+      <div id="gradient_overlay" class="position-absolute"></div>
+      <div class="container h-75 w-75 bg-blur log-container rounded-3 mb-5 collapse show" id="acceder-container">
+          <div class="container text-center h-25">
+              <h2 class="mt-5 fw-bold">INICIAR SESION</h2>
+              <h3></h3>
+          </div>
+          <form>
+            <div class="form-floating mb-4">
+              <input type="email" class="form-control bg-input focus-ring focus-ring-dark text-decoration-none text-white" id="floatingInput" placeholder="name@example.com"  >
+              <label for="floatingInput">Email</label>
+            </div>
+            <div class="form-floating">
+              <input type="password" class="form-control bg-input focus-ring focus-ring-dark text-decoration-none text-white" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <div class="mt-2 form-check fsz-small d-flex flex-row justify-content-between">
+              <input type="checkbox" class="form-check-input me-2" id="exampleCheck1">
+              <label class="form-check-label ms-7" for="exampleCheck1">Recordarme</label>
+              <a href="#" class="text-decoration-none">¿Olvidaste tu contraseña?</a>
+            </div>
+            <button type="submit" class="btn btn-one mt-5 w-100">Iniciar</button>
+            <button type="button" class="btn btn-one-line mt-2 w-100" id="crear-cambiar" data-toggle="collapse" data-target="#acceder-container,#crear-container">Crear cuenta</button>
+          </form>
+      </div>
+      <div class="container h-75 w-75 bg-blur log-container rounded-3 mb-5 collapse " id="crear-container">
+        <div class="container d-flex justify-content-end align-items-center  h-10">
+            <h2 class="mt-1 me-2 fw-bold">CREAR CUENTA</h2>
+            <button type="button" class="non-button mb-1">
+              <img src="hacia-atras.png" alt="" class="button-size-sm">
+            </button>
+        </div>
+        <form>
+          <div class="form-floating mb-4">
+            <input type="name" class="form-control bg-input focus-ring focus-ring-dark text-decoration-none text-white" id="floatingName" placeholder="name@example.com"  >
+            <label for="floatingName">Nombre</label>
+          </div>
+          <div class="form-floating mb-4">
+            <input type="name" class="form-control bg-input focus-ring focus-ring-dark text-decoration-none text-white" id="floatingLastName" placeholder="name@example.com"  >
+            <label for="floatingLastName">Apellido</label>
+          </div>
+          <div class="form-floating mb-4">
+            <input type="email" class="form-control bg-input focus-ring focus-ring-dark text-decoration-none text-white" id="floatingEmail" placeholder="Password">
+            <label for="floatingEmail">Ejemplo@email.com</label>
+          </div>
+          <div class="form-floating mb-4">
+            <input type="password" class="form-control bg-input focus-ring focus-ring-dark text-decoration-none text-white" id="floatingNewPassword" placeholder="Password">
+            <label for="floatingNewPassword">Contraseña</label>
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control bg-input focus-ring focus-ring-dark text-decoration-none text-white" id="floatingRepeatNewPassword" placeholder="Password">
+            <label for="floatingRepeatNewPassword">Repetir Contraseña</label>
+          </div>
+          <div class="mt-2 form-check fsz-small d-flex flex-row justify-content-start">
+            <input type="checkbox" class="form-check-input me-2" id="Rules">
+            <label class="form-check-label ms-7" for="Rules">Acepto los <a href="" class="text-decoration-none text-pink">terminos y condiciones</a></label>
+            
+          </div> 
+         <button type="submit" class="btn btn-one w-100">Crear cuenta</button>
+          
+        </form>
+    </div>
+  </section>
+    <script src="login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    
+  </body>
+</html>

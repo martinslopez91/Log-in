@@ -1,0 +1,142 @@
+
+
+/*---------RESET-----------*/
+a{
+    color: white;
+    transition: 0.2s;
+}
+a:hover{
+    color: #636363;
+}
+body{
+    height: 100vh;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+section{
+    height: 100%;
+    background-size:cover;  
+    
+}
+h2 {
+    background: linear-gradient(145deg,#636363,white,#636363,white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+/*-------------------------*/
+
+/*--------CUSTOM STYLE---------*/
+.bg-blur{
+    backdrop-filter: blur(20px);
+}
+.bg-input{
+    background-color:transparent;
+    border: 1px solid #c900cd;
+    
+}
+.bg-input:focus{
+    background-color: transparent;
+    outline: 1px solid #810083;
+}
+#video_background {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#gradient_overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0)40%, rgb(0, 0, 0)100%);
+    z-index: 0;
+}
+.fsz-small{
+    font-size: 12px;
+}
+.ms-7{
+    margin-right: 39%;
+}
+.btn-one{
+    background-color: #c900cd;
+    color: white;
+   
+}
+.btn-one-line{
+    background-color: transparent;
+    border: 1px solid #c900cd;
+    color: white;
+    
+}
+    .btn-one:hover ,.btn-one-line:hover{
+        background-color: #fb00ff;
+        box-shadow: 1px 6px 12px 6px #810083;
+        color: #636363;
+    }
+.h-10{
+    height: 15%;
+}
+.text-pink{
+    color: #fb00ff;
+}
+.button-size-sm{
+   height: 100%;
+   width: 100%;
+}
+.non-button{
+    outline: none;
+    background: transparent;
+    border: none;
+    width: 11%;
+    height: 40%;
+}
+/*-------------------------------*/
+/*---------REPONSIVE-----------*/
+/* Extra small devices (phones) */
+@media (max-width:270px) {
+    
+}
+@media (max-width: 575.98px) {
+    
+ }
+
+/* Small devices (tablets) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    
+ }
+
+/* Medium devices (desktops) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .log-container{
+        width: 50% !important;
+       }
+ }
+
+/* Large devices (desktops) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .log-container{
+        width: 40% !important;
+       }
+ }
+
+/* Extra large devices (large desktops) */
+@media (min-width: 1200px) and (max-width: 1399.98px) { 
+    .log-container{
+        width: 30% !important;
+       }
+ 
+}
+
+/* Extra extra large devices (larger desktops) */
+@media (min-width: 1400px) {
+   .log-container{
+    width: 50% !important;
+   }
+ 
+}
